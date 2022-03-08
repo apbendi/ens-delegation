@@ -1,0 +1,15 @@
+{
+  "name": "ens-delegation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ben DiFrancesco <ben@scopelift.co>",
+  "license": "MIT",
+  "private": false,
+  "volta": {
+    "node": "16.14.0",
+    "yarn": "1.22.17"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.27.0"
+  }
+}
