@@ -1,15 +1,20 @@
 {
   "name": "ens-delegation",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Ben DiFrancesco <ben@scopelift.co>",
-  "license": "MIT",
-  "private": false,
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ apbendi/ens-delegation",
+    "create-local": "graph create --node http://localhost:8020/ apbendi/ens-delegation",
+    "remove-local": "graph remove --node http://localhost:8020/ apbendi/ens-delegation",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 apbendi/ens-delegation"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.27.0",
+    "@graphprotocol/graph-ts": "0.24.1"
+  },
   "volta": {
     "node": "16.14.0",
     "yarn": "1.22.17"
-  },
-  "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.27.0"
   }
 }

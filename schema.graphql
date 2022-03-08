@@ -1,0 +1,10 @@
+type DelegateChangedEntity @entity {
+  id: ID!
+  delegator: Bytes! # address
+  fromDelegate: Bytes! # address
+  toDelegate: Bytes! # address
+  timestamp: BigInt! # uint256
+  block: BigInt! # uint256
+  txHash: Bytes! # bytes32
+  from: Bytes! # address
+}
